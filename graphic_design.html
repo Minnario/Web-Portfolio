@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Website Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h1 class="logo-text">Volodymyr's Portfolio Web Project</h1>
+                </a>
+            </div>
+            <button id="ballButton" class="rain-button">Make Logos Rain!</button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="graphic_design.html">Graphic Design</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="work_experience.html">Work Experience</a></li>
+                    <li><a href="dreamweaver.html">Website</a></li>
+                    <li><a href="communications.html">Communications</a></li>
+                    <li><a href="instructions.html">Instructions</a></li>
+                    <li><a href="contact_form.html">Contact Form</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div id="ballContainer"></div>
+
+        <div class="flip-container">
+            <span class="flip-text">M</span>
+            <span class="flip-text">Y</span>
+            <span class="flip-text"> </span> <span class="flip-text">D</span>
+            <span class="flip-text">E</span>
+            <span class="flip-text">S</span>
+            <span class="flip-text">I</span>
+            <span class="flip-text">G</span>
+            <span class="flip-text">N</span>
+            <span class="flip-text"> </span> <span class="flip-text">P</span>
+            <span class="flip-text">R</span>
+            <span class="flip-text">O</span>
+            <span class="flip-text">J</span>
+            <span class="flip-text">E</span>
+            <span class="flip-text">C</span>
+            <span class="flip-text">T</span>
+            <span class="flip-text">S</span>
+        </div>
+        <script src="script2.js"></script>
+
+        <section class="about-me">
+            <h2>Logo design project introduction</h2>
+            <div class="about-me-content">
+                <div class="about-me-text">
+                    <p>Design a high-quality visual Logo and Corporate Marketing Package for a company you have chosen
+                        to use
+                        throughout the duration of this program module.
+                    </p>
+
+                    <p>Design process from initial concept through to postproduction: planning, progression,
+                        development,
+                        improvement and evaluation.
+                    </p>
+
+                    <h2>Design deliverables:
+                    </h2>
+
+                    <ul style="font-size: 18px;">
+                        <li>Logo design in various formats - eps., jpeg, png, pdf , ai., svg
+                        </li>
+                        <li>Business Card 85mm x 55mm</li>
+                        <li>Letterhead 210mm x 297mm </li>
+                        <li>Compliment Slip 210mm x 99mm</li>
+                        <li>Flyer A4 - 297x210mm</li>
+                        <li>Brand Guidelines </li>
+                        <li> Merchandise mock ups</li>
+                    </ul>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="gallery">
+                <div class="image-container">
+                    <img src="images/design1.jpg" alt="Design 1" onclick="openLightbox('images/design1.jpg')">
+                </div>
+                <div class="image-container">
+                    <img src="images/design2.jpg" alt="Design 2" onclick="openLightbox('images/design2.jpg')">
+                </div>
+                <div class="image-container">
+                    <img src="images/design3.jpg" alt="Design 2" onclick="openLightbox('images/design3.jpg')">
+                </div>
+                <div class="image-container">
+                    <img src="images/design4.jpg" alt="Design 2" onclick="openLightbox('images/design4.jpg')">
+                </div>
+                <div class="image-container">
+                    <img src="images/design5.jpg" alt="Design 2" onclick="openLightbox('images/design5.jpg')">
+                </div>
+                <div class="image-container">
+                    <img src="images/design6.jpg" alt="Design 2" onclick="openLightbox('images/design6.jpg')">
+                </div>
+            </div>
+
+            <div id="lightbox" class="lightbox">
+                <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                <img id="lightbox-image" class="lightbox-content">
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Volodymyr Sotnikov. All rights reserved. <br> Email: vladisotnikov@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
